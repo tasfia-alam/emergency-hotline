@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<!-- fontawsome -->
+    <!-- fontawsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Tailwind css -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -13,23 +13,26 @@
 </head>
 <body>
     <!-- Navbar -->
-    <div class="navbar bg-base-100 shadow-sm">
-  <div class="flex-1 flex">
-    <img src="assets/logo.png" alt="" class="w-[65px] ml-6 ">
-    <h1 class="pt-1 ml-2 text-xl font-bold text-[#006747]">Emergency<br>Service</h1>
-  </div>
-  <div class=" grid grid-cols-1 md:grid-cols-3 gap-2">
-    <button class="btn btn-active rounded-full bg-[#ECFFF0] border-[#ECFFF0]"><span id="total-heart">0</span>
-    <img src="assets/heart.png" alt="" class="w-5">
-    </button>
-    <button class="btn btn-active rounded-full bg-[#ECFFF0] border-[#ECFFF0]"><span id="total-coin">100</span>
-    <img src="assets/coin.png" alt="" class="w-[20px]">
-    </button>
-    <button class="btn btn-active rounded-2xl bg-[#00A63E] border-[#00A63E] pr-6 pl-6 text-white mr-5 "><span id="total-copy">0</span>Copy</button>
 
-    </div>
+  <div class="nav-parent bg-white flex justify-between items-center mx-auto px-4 py-5">
+            <!-- left side navber logo and titel -->
+            <div class="nav-left flex sm:pl-6 md:gap-2 mr-2">
+            <img class="w-14" src="assets/logo.png" alt="">
+            <h1 class="text-[#006747] text-xl font-bold">Emergency <br> Service</h1>
+            </div>
+            <!-- right side navber 3 buttons -->
+            <div class="nav-right grid grid-cols-2 md:grid-cols-3 gap-4">
+                <button  class="btn bg-[#d2f3db] rounded-full font-bold "><span id="total-heart">0</span><img class="w-6" src="assets/heart.png" alt=""></button>
+                <button class="btn bg-[#d2f3db] rounded-full font-bold "><span id="total-coin">100</span><img class="w-6" src="assets/coin.png" alt=""></button>
+                <button class="btn bg-[#00A63E] rounded-full text-white "><span id="total-copy">0</span>Copy</button>
+            </div>
+        </div>
 
-  </div>
+
+
+
+
+
 
   <!-- hero section -->
   <div
