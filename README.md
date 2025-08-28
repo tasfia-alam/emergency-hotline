@@ -24,7 +24,13 @@
   when u click ta button its shows a popup where write this child button clicked. Firstly we have to call a Id then called click fuction and shows the alert message. 
 
 4. What is **Event Delegation** in JavaScript? Why is it useful?
-5. What is the difference between **preventDefault() and stopPropagation()** methods?
+=> Event Delegation is a very importand and useful technique for handling events.
+  By using delegation, we can call large number elements easily , its saves our times and consume less memory.
 
+
+5. What is the difference between **preventDefault() and stopPropagation()** methods?
+=> preventDefault(): this disable the default browser action.
+   stopPropagation(): this stops the event bubbling but doesn't use the default browser action.
+   
 ---
 
