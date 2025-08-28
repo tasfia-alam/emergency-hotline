@@ -41,7 +41,7 @@ if (e.target.classList.contains("click-copy")) {
         let totalCoin = Number(totalCoinElement.innerText);
 
         if (totalCoin < 20) {
-            alert("❌Apnar porjapto coin sesh");
+            alert("❌Not enough coins. At least 20 coins needed");
             return;
         }
 
@@ -54,10 +54,10 @@ if (e.target.classList.contains("click-copy")) {
         const number = card.querySelector(".service-number").innerText;
         const callText = e.target.innerText;
 
-        // Alert দেখানো
+        // Alert 
         alert(`${callText} ${title} ${number}`);
 
-        // Call history তে যোগ করা
+        // Call history 
         const callHistoryContainer = document.querySelector(".flex-1.overflow-y-auto"); // right side container
         const timeNow = new Date();
         const formattedTime = timeNow.toLocaleTimeString(); 
@@ -76,13 +76,13 @@ if (e.target.classList.contains("click-copy")) {
 
         callHistoryContainer.prepend(historyItem); 
     }
-    //copy clicked
+   
 
 
     
 
 });
-
+    //clear button
     document.getElementById('btn-clear').addEventListener('click',function(){
     const callHistoryContainer = getElement('call-history-container');
     callHistoryContainer.innerHTML = "";
